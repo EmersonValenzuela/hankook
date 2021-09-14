@@ -355,30 +355,121 @@
       </div>
   </footer>
 
-    <!--page scroll start-->
-    <div class="page-scroll scrollToTop"><a href="#"><img src="images/car_upper.png"></a></div>
-    <!--page scroll start-->
+			<!---BTN OPEN FORM--->
+			<div class="item-open-form">
+				<div>
+					<i id="icon-form-contact" class="fa fa-sort-up"></i>
+				</div>
+				<div>Contáctanos</div>
+			</div>
 
-    <!-- Js -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-    <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-    <!-- Jquery Fancybox -->
-    <script src="js/jquery.fancybox.min.js"></script>
-    <!-- Animate js -->
-    <script src="js/animate.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-    <!-- WOW file -->
-    <script src="js/wow.js"></script>
-    <!-- Counter -->
-    <script src="js/counter.js"></script>
-    <!-- general script file -->
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/script.js"></script>
+			<!--**************** start FIXED FORM CONTACT *********************-->
+			<div class="form-contact-container form-contact-container-fixed">
+				<div class="item-icon-close-form">X</div>
+				<div class="bg-form-filter"></div>
+				<div class="header-wrapper">
+					<h1>Consultas y cotizaciones</h1>
+					<h4>Comunícate con Nosotros</h4>
+				</div>
+				<form
+					class="needs-validation-form form-contact"
+					novalidate
+					method="post"
+					action="./send-form/form-send-fixed.php"
+					onsubmit="return validateForm()"
+				>
+					<div class="grid-50" style="width: 100%">
+						<div class="item-form-input">
+							<!-- <label for="validationCustom01">Nombres:</label> -->
+							<input
+								type="text"
+								id="input-name-fixed"
+								name="userName"
+								placeholder="NOMBRES"
+								required
+							/>
+						</div>
+						<div class="item-form-input">
+							<!-- <label for="validationCustom04 exampleFormControlTextarea1">Email:</label> -->
+							<input
+								type="email"
+								min="0"
+								id="input-email-fixed"
+								name="userEmail"
+								placeholder="EMAIL"
+								required
+							/>
+						</div>
+					</div>
+					<div class="grid-50" style="width: 100%">
+						<div class="item-form-input">
+							<!-- <label for="validationCustom03 exampleFormControlTextarea1">Teléfono:</label> -->
+							<input
+								type="number"
+								min="0"
+								id="input-phone-fixed"
+								name="userPhone"
+								placeholder="CELULAR"
+								required
+							/>
+						</div>
+						<div class="item-form-input">
+							<!-- <label for="validationCustom02 exampleFormControlTextarea1">Empresa:</label> -->
+							<input
+								type="text"
+								min="0"
+								id="input-issue-fixed"
+								name="userIssue"
+								placeholder="ASUNTO"
+								required
+							/>
+						</div>
+					</div>
+
+					<div class="grid-100">
+						<div class="item-form-input">
+							<!-- <label for="validationCustom02 exampleFormControlTextarea1">Empresa:</label> -->
+							<textarea
+								type="text"
+								min="0"
+								id="input-message-fixed"
+								name="userMessage"
+								placeholder="MENSAJE"
+								required
+							></textarea>
+						</div>
+					</div>
+					<div class="form-item-row" style="width: 100%">
+						<div class="item-send-button">
+							<button class="btn-send" name="btn-send-message-fixed" type="submit">
+								Enviar
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<!-- Js -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/popper.min.js"></script>
+			<script src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+			<script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+			<!-- Jquery Fancybox -->
+			<script src="js/jquery.fancybox.min.js"></script>
+			<!-- Animate js -->
+			<script src="js/animate.js"></script>
+			<script>
+				new WOW().init();
+			</script>
+			<!-- WOW file -->
+			<script src="js/wow.js"></script>
+			<!-- Counter -->
+			<script src="js/counter.js"></script>
+			<!-- general script file -->
+			<script src="js/owl.carousel.js"></script>
+			<script src="js/script.js"></script>
+			<script src="js/form-contact-fixed.js"></script>
 
   </div>
 </body>
