@@ -4,7 +4,7 @@
 * {
   margin: 0;
   padding: 0;
-}
+} 
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -344,7 +344,7 @@ ul.tick li {
 .btn-whatsapp.btn-atencion{
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  background: #fe4e02;
+  background: #009345;
   position: fixed;
   right: 0;
   padding: 0 10px;
@@ -1006,6 +1006,7 @@ a.wit-btn {
   border-bottom-left-radius: 25px;
   margin-bottom: 25px;
   background: #fff;
+  text-align: center;
 }
 .carImg{
   z-index: 99; 
@@ -1293,14 +1294,15 @@ background-color:#e63d53;
 .testimonials_sec p {
   font-size: 14px;
   line-height: 22px;
-  color: #d2d2d2;
+  color: #000;
   /*font-style: italic; */
   padding-right: 100px; 
   border-left: 3px solid #000;
   padding-left: 20px;
 }
 .testimonials-wrap .title {
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom:50px;
 }
 .testimonials-wrap .title:after {
   left: 50%; height: 2px; width: 60px;
@@ -1425,8 +1427,8 @@ button:focus {
 .page_content .testimonials_sec {
   border: 1px solid #ddd; padding: 20px; margin: 15px 0;
 }
-.page_content .testimonials_sec p{border: none; color: #808080;}
-.page_content .quote_icon{right: 36px; color: #2e375f;}
+.page_content .testimonials_sec p{border: none; color: #000;}
+.page_content .quote_icon{right: 36px; color: #000;}
 .page_content .clientImg{margin-bottom: 0;}
 .page_content .client_sec h3{color: #000;}
 
@@ -1452,6 +1454,7 @@ button:focus {
 .team-info .designation{color: #fff; font-size: 14px;}
 .title_center{
   text-align: center;
+  
 }
 .title_center:after{
   height:2px; 
@@ -3513,9 +3516,8 @@ button:focus {
 	color: #fff;
 	cursor: pointer;
 	top: 17%;
-	right: -4.3rem;
+	right: -0.5rem;
 	z-index: 999999;
-	transform: rotate(-90deg);
 	font-weight: 800;
 	font-size: 1.3rem;
 }
