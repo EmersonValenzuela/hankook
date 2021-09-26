@@ -28,6 +28,26 @@
     rel="stylesheet">
   <title>Ofertas LLantas o Neumáticos para Autos, Camionetas y Camiones</title>
 </head>
+<script>
+    function soloNumeros(variable) {
+    var key = variable.keyCode || variable.which,
+      tecla = String.fromCharCode(key).toLowerCase(),
+      numeros = " +0123456789",
+      especiales = [8, 37, 39, 46],
+      tecla_especial = false;
+
+    for (var i in especiales) {
+      if (key == especiales[i]) {
+        tecla_especial = true;
+        break;
+      }
+    }
+
+    if (numeros.indexOf(tecla) == -1 && !tecla_especial) {
+      return false;
+    }
+  }
+</script>
 
 <body>
 
@@ -375,7 +395,7 @@
         <h1>Consultas y cotizaciones</h1>
         <h4>Comunícate con Nosotros</h4>
       </div>
-      <form class="needs-validation-form form-contact" novalidate method="post" action="./send-form/form-send-fixed.php"
+      <form class="needs-validation-form form-contact" novalidate method="post" action="sendmail.php"
         onsubmit="return validateForm()">
         <div class="grid-50" style="width: 100%">
           <div class="item-form-input">
@@ -390,7 +410,7 @@
         <div class="grid-50" style="width: 100%">
           <div class="item-form-input">
             <!-- <label for="validationCustom03 exampleFormControlTextarea1">Teléfono:</label> -->
-            <input type="number" min="0" id="input-phone-fixed" name="userPhone" placeholder="CELULAR" required />
+            <input type="text" min="0" id="input-phone-fixed" name="userPhone" placeholder="CELULAR" onkeypress="return soloNumeros(event)" required />
           </div>
           <div class="item-form-input">
             <!-- <label for="validationCustom02 exampleFormControlTextarea1">Empresa:</label> -->
